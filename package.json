@@ -1,0 +1,16 @@
+{
+  "name": "insure-landing-page",
+  "version": "1.0.0",
+  "description": "Insure landing page",
+  "main": "index.html",
+  "repository": "https://github.com/AhmedElaguab/insure-landing-page",
+  "author": "Ahmed Elaguab <elaguabahmed97@gmail.com>",
+  "license": "ISC",
+  "private": false,
+  "scripts": {
+    "watch:css": "sass --watch ./css/style.scss ./css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.26.8"
+  }
+}
