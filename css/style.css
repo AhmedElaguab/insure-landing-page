@@ -1,9 +1,20 @@
+.navbar-sc-phone__link, .navbar__link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: inherit;
+}
+
 * {
   box-sizing: border-box;
 }
 
 body {
   font: 16px/1.5 "Karla", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -16,6 +27,12 @@ h6 {
   font-weight: 400;
 }
 
+.container {
+  max-width: 1440px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -23,6 +40,104 @@ h6 {
 
 .attribution a {
   color: #3e52a3;
+}
+
+.header {
+  background: #fff;
+  padding: 1.3rem 0;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__bars-btn {
+  padding: 0;
+  display: block;
+  border: none;
+  background: transparent;
+}
+.header__bars-icon {
+  display: block;
+  cursor: pointer;
+}
+
+.brand__img {
+  display: block;
+}
+
+.navbar {
+  display: none;
+}
+.navbar__menu {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  color: #837d87;
+}
+.navbar__link {
+  margin-left: 2rem;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+.navbar__link:hover {
+  color: #2b272f;
+}
+.navbar__link--active {
+  padding: 0.5rem 2rem;
+  border: 2px solid #2b272f;
+  color: #2b272f;
+}
+.navbar__link--active:hover {
+  background: #2b272f;
+  color: #fff;
+}
+
+.navbar-sc-phone {
+  position: absolute;
+  display: none;
+  background: #2b272f url("./../images/bg-pattern-mobile-nav.svg") fixed no-repeat bottom/contain;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 74px;
+  bottom: 0;
+  text-align: center;
+}
+.navbar-sc-phone__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 3rem 1rem;
+}
+.navbar-sc-phone__link {
+  padding: 0.6rem 0;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.navbar-sc-phone__link--active {
+  border: 1px solid #fff;
+}
+.navbar-sc-phone--open {
+  display: block;
+}
+
+@media screen and (min-width: 770px) {
+  .header {
+    padding: 0.5rem;
+  }
+
+  .navbar-sc-phone {
+    display: none;
+  }
+
+  .header__bars {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

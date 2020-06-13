@@ -1,7 +1,24 @@
 // Variables
 // -> Screens
-$sc-mb: 375px;
+$sc-sm: 375px;
+$sc-md: 770px;
 $sc-xl: 1440px;
+// -> Colors
+$primary: hsl(256, 26%, 20%);
+$primary-dark: hsl(270, 9%, 17%);
+$primary-gray: hsl(273, 4%, 51%);
+$secondary: hsl(216, 30%, 68%);
+$secondary-light: hsl(0, 0%, 98%);
+
+// Extend Placeholders
+%link {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: inherit;
+}
 
 // Global Styles
 * {
@@ -10,6 +27,8 @@ $sc-xl: 1440px;
 
 body {
   font: 16px/1.5 'Karla', sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -22,6 +41,12 @@ h6 {
   font-weight: 400;
 }
 
+.container {
+  max-width: 1440px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
 // Copyright (c) attributes
 .attribution {
   font-size: 11px;
@@ -30,4 +55,121 @@ h6 {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+// Start header styles
+.header {
+  background: #fff;
+  padding: 1.3rem 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__bars {
+    &-btn {
+      padding: 0;
+      display: block;
+      border: none;
+      background: transparent;
+    }
+    &-icon {
+      display: block;
+      cursor: pointer;
+    }
+  }
+}
+
+.brand__img {
+  display: block;
+}
+
+.navbar {
+  display: none;
+
+  &__menu {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    color: $primary-gray;
+  }
+
+  &__link {
+    @extend %link;
+    margin-left: 2rem;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+
+    &:hover {
+      color: $primary-dark;
+    }
+
+    &--active {
+      padding: 0.5rem 2rem;
+      border: 2px solid $primary-dark;
+      color: $primary-dark;
+
+      &:hover {
+        background: $primary-dark;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.navbar-sc-phone {
+  position: absolute;
+  display: none;
+  background: $primary-dark url('./../images/bg-pattern-mobile-nav.svg') fixed
+    no-repeat bottom/contain;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 74px;
+  bottom: 0;
+  text-align: center;
+
+  &__menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 3rem 1rem;
+  }
+
+  &__link {
+    @extend %link;
+    padding: 0.6rem 0;
+    color: #fff;
+    margin-bottom: 0.5rem;
+
+    &--active {
+      border: 1px solid #fff;
+    }
+  }
+
+  &--open {
+    display: block;
+  }
+}
+// End header styles
+
+// Responsive Styles
+@media screen and (min-width: $sc-md) {
+  // Start header styles
+  .header {
+    padding: 0.5rem;
+  }
+  .navbar-sc-phone {
+    display: none;
+  }
+
+  .header__bars {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+  }
 }

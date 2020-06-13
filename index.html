@@ -22,28 +22,66 @@
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
     <header class="header">
-      <div class="brand">
-        <img src="./images/logo.svg" alt="Insure logo" />
+      <div class="container">
+        <div class="header__inner">
+          <div class="brand">
+            <img class="brand__img" src="./images/logo.svg" alt="Insure logo" />
+          </div>
+          <div class="header__bars">
+            <button class="header__bars-btn">
+              <img
+                class="header__bars-icon"
+                src="./images/icon-hamburger.svg"
+                alt="hamburger icon"
+              />
+            </button>
+          </div>
+          <nav class="navbar">
+            <ul class="navbar__menu">
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Here we work</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Blog</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link">Account</a>
+              </li>
+              <li class="navbar__item">
+                <a href="#" class="navbar__link navbar__link--active"
+                  >View plans</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="navbar-sc-phone">
+            <ul class="navbar-sc-phone__menu">
+              <li class="navbar-sc-phone__item">
+                <a href="#" class="navbar-sc-phone__link">Here we work</a>
+              </li>
+              <li class="navbar-sc-phone__item">
+                <a href="#" class="navbar-sc-phone__link">Blog</a>
+              </li>
+              <li class="navbar-sc-phone__item">
+                <a href="#" class="navbar-sc-phone__link">Account</a>
+              </li>
+              <li class="navbar-sc-phone__item">
+                <a
+                  href="#"
+                  class="navbar-sc-phone__link navbar-sc-phone__link--active"
+                  >View plans</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav class="navbar">
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Here we work</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Blog</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Account</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">View plans</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <main class="main-content">
