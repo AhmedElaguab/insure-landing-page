@@ -143,10 +143,30 @@ h6 {
   text-align: center;
 }
 .intro__body {
+  position: relative;
   padding: 5rem 1rem;
+}
+.intro__body::before {
+  content: "";
+  position: absolute;
+  background: url(./../images/bg-pattern-intro-left-mobile.svg) no-repeat top left;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+.intro__body::after {
+  content: "";
+  position: absolute;
+  background: url(./../images/bg-pattern-intro-right-mobile.svg) no-repeat bottom right;
+  height: 100%;
+  width: 100%;
+  top: 176px;
+  right: 0;
 }
 .intro__img {
   max-width: 100%;
+  display: block;
 }
 .intro__btn {
   display: inline-block;
@@ -154,6 +174,10 @@ h6 {
   padding: 0.4rem 2rem;
   margin-top: 1.5rem;
   border: 1.5px solid;
+}
+.intro__btn:hover {
+  background: #fff;
+  color: #2d2640;
 }
 
 @media screen and (min-width: 770px) {

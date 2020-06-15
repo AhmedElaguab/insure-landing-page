@@ -177,11 +177,35 @@ h6 {
   text-align: center;
 
   &__body {
+    position: relative;
     padding: 5rem 1rem;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: url(./../images/bg-pattern-intro-left-mobile.svg) no-repeat
+        top left;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: url(./../images/bg-pattern-intro-right-mobile.svg) no-repeat
+        bottom right;
+      height: 100%;
+      width: 100%;
+      top: 176px;
+      right: 0;
+    }
   }
 
   &__img {
     max-width: 100%;
+    display: block;
   }
 
   &__heading {
@@ -199,6 +223,11 @@ h6 {
     padding: 0.4rem 2rem;
     margin-top: 1.5rem;
     border: 1.5px solid;
+
+    &:hover {
+      background: #fff;
+      color: $primary;
+    }
   }
 }
 // End intro styles
