@@ -118,6 +118,7 @@ h6 {
   top: 74px;
   bottom: 0;
   text-align: center;
+  z-index: 10;
 }
 .navbar-sc-phone__menu {
   margin: 0;

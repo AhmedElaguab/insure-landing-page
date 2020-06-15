@@ -145,6 +145,7 @@ h6 {
   top: 74px;
   bottom: 0;
   text-align: center;
+  z-index: 10;
 
   &__menu {
     margin: 0;
@@ -238,6 +239,7 @@ h6 {
   .header {
     padding: 0.5rem;
   }
+
   .navbar-sc-phone {
     display: none;
   }
