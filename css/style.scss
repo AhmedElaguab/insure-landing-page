@@ -18,6 +18,18 @@ $secondary-light: hsl(0, 0%, 98%);
   font-weight: 700;
   font-size: 1.1rem;
   color: inherit;
+  letter-spacing: 1px;
+}
+
+%section-heading {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+%para {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 // Global Styles
@@ -160,8 +172,33 @@ h6 {
 
 // Start intro styles
 .intro {
+  background: $primary;
+  color: #fff;
+  text-align: center;
+
+  &__body {
+    padding: 5rem 1rem;
+  }
+
   &__img {
     max-width: 100%;
+  }
+
+  &__heading {
+    @extend %section-heading;
+  }
+
+  &__para {
+    @extend %para;
+  }
+
+  &__btn {
+    @extend %link;
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 0.4rem 2rem;
+    margin-top: 1.5rem;
+    border: 1.5px solid;
   }
 }
 // End intro styles

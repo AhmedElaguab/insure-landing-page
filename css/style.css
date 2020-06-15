@@ -1,10 +1,22 @@
-.navbar-sc-phone__link, .navbar__link {
+.intro__btn, .navbar-sc-phone__link, .navbar__link {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.1rem;
   color: inherit;
+  letter-spacing: 1px;
+}
+
+.intro__heading {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.intro__para {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
 }
 
 * {
@@ -125,8 +137,23 @@ h6 {
   display: block;
 }
 
+.intro {
+  background: #2d2640;
+  color: #fff;
+  text-align: center;
+}
+.intro__body {
+  padding: 5rem 1rem;
+}
 .intro__img {
   max-width: 100%;
+}
+.intro__btn {
+  display: inline-block;
+  font-size: 0.9rem;
+  padding: 0.4rem 2rem;
+  margin-top: 1.5rem;
+  border: 1.5px solid;
 }
 
 @media screen and (min-width: 770px) {
