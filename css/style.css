@@ -125,6 +125,10 @@ h6 {
   display: block;
 }
 
+.intro__img {
+  max-width: 100%;
+}
+
 @media screen and (min-width: 770px) {
   .header {
     padding: 0.5rem;

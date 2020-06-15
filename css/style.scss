@@ -158,6 +158,14 @@ h6 {
 }
 // End header styles
 
+// Start intro styles
+.intro {
+  &__img {
+    max-width: 100%;
+  }
+}
+// End intro styles
+
 // Responsive Styles
 @media screen and (min-width: $sc-md) {
   // Start header styles
