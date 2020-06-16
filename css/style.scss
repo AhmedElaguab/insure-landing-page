@@ -235,6 +235,31 @@ h6 {
 }
 // End intro styles
 
+// Responsive Styles
+@media screen and (min-width: $sc-md) {
+  // Global styles
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  // Start header styles
+  .header {
+    padding: 0.9rem;
+  }
+
+  .navbar-sc-phone {
+    display: none;
+  }
+
+  .header__bars {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+  }
+}
+
 @media screen and (min-width: $sc-lg) {
   // Start intro styles
   .intro {
@@ -279,6 +304,7 @@ h6 {
 
     &__img {
       position: absolute;
+      right: 0;
     }
 
     &__body {
@@ -294,7 +320,7 @@ h6 {
     }
 
     &__heading {
-      font-size: 5.5rem;
+      font-size: 4.5rem;
 
       &-line {
         height: 1px;
@@ -305,24 +331,4 @@ h6 {
     }
   }
   // End intro styles
-}
-
-// Responsive Styles
-@media screen and (min-width: $sc-md) {
-  // Start header styles
-  .header {
-    padding: 0.9rem;
-  }
-
-  .navbar-sc-phone {
-    display: none;
-  }
-
-  .header__bars {
-    display: none;
-  }
-
-  .navbar {
-    display: flex;
-  }
 }
