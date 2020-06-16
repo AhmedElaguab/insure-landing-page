@@ -11,7 +11,7 @@
 .intro__heading {
   font-size: 2.5rem;
   line-height: 1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .intro__para {
@@ -44,7 +44,6 @@ h6 {
 
 .container {
   max-width: 1440px;
-  padding: 0 1rem;
   margin: 0 auto;
 }
 
@@ -58,8 +57,10 @@ h6 {
 }
 
 .header {
+  position: relative;
   background: #fff;
   padding: 1.3rem 0;
+  z-index: 9999;
 }
 .header__inner {
   display: flex;
@@ -172,7 +173,7 @@ h6 {
 .intro__btn {
   display: inline-block;
   font-size: 0.9rem;
-  padding: 0.4rem 2rem;
+  padding: 0.6rem 2rem;
   margin-top: 1.5rem;
   border: 1.5px solid;
 }
@@ -181,6 +182,63 @@ h6 {
   color: #2d2640;
 }
 
+@media screen and (min-width: 1120px) {
+  .intro {
+    position: relative;
+    padding: 6.5rem 0;
+  }
+  .intro::before {
+    content: "";
+    position: absolute;
+    background: url(./../images/bg-pattern-intro-left-desktop.svg) no-repeat bottom left;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .intro::after {
+    content: "";
+    position: absolute;
+    background: url(./../images/bg-pattern-intro-right-desktop.svg) no-repeat top right;
+    top: -25px;
+    right: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .intro__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .intro__header {
+    position: relative;
+    order: 1;
+    max-width: 50%;
+    width: 100%;
+    height: 100%;
+  }
+  .intro__img {
+    position: absolute;
+  }
+  .intro__body {
+    max-width: 50%;
+    text-align: left;
+    padding: 0;
+    padding-right: 2rem;
+  }
+  .intro__body::after, .intro__body::before {
+    display: none;
+  }
+  .intro__heading {
+    font-size: 5.5rem;
+  }
+  .intro__heading-line {
+    height: 1px;
+    background-color: #fff;
+    width: 25%;
+    margin-bottom: 4rem;
+  }
+}
 @media screen and (min-width: 770px) {
   .header {
     padding: 0.9rem;
