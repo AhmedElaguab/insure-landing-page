@@ -1,8 +1,9 @@
 // Variables
 // -> Screens
-$sc-sm: 375px;
-$sc-md: 770px;
-$sc-lg: 1120px;
+$sc-xs: 375px;
+$sc-sm: 425px;
+$sc-md: 768px;
+$sc-lg: 1024px;
 $sc-xl: 1440px;
 // -> Colors
 $primary: hsl(256, 26%, 20%);
@@ -58,7 +59,7 @@ h6 {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -236,7 +237,16 @@ h6 {
 // End intro styles
 
 // Responsive Styles
-@media screen and (min-width: $sc-md) {
+@media screen and (min-width: $sc-sm) {
+  // Global styles
+  .intro {
+    &__header {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $sc-lg) {
   // Global styles
   .container {
     padding-left: 1rem;
@@ -245,6 +255,12 @@ h6 {
   // Start header styles
   .header {
     padding: 0.9rem 0;
+  }
+
+  .intro {
+    &__header {
+      display: block;
+    }
   }
 
   .navbar-sc-phone {
@@ -258,9 +274,7 @@ h6 {
   .navbar {
     display: flex;
   }
-}
 
-@media screen and (min-width: $sc-lg) {
   // Start intro styles
   .intro {
     position: relative;
@@ -320,7 +334,7 @@ h6 {
     }
 
     &__heading {
-      font-size: 4.5rem;
+      font-size: 3.5rem;
 
       &-line {
         height: 1px;
@@ -331,4 +345,12 @@ h6 {
     }
   }
   // End intro styles
+}
+
+@media screen and (min-width: $sc-xl) {
+  .intro {
+    &__heading {
+      font-size: 4.5rem;
+    }
+  }
 }
