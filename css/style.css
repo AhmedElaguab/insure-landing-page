@@ -182,7 +182,12 @@ h6 {
   color: #2d2640;
 }
 
-@media screen and (min-width: 770px) {
+@media screen and (min-width: 425px) {
+  .intro__header {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -190,6 +195,10 @@ h6 {
 
   .header {
     padding: 0.9rem 0;
+  }
+
+  .intro__header {
+    display: block;
   }
 
   .navbar-sc-phone {
@@ -203,8 +212,7 @@ h6 {
   .navbar {
     display: flex;
   }
-}
-@media screen and (min-width: 1120px) {
+
   .intro {
     position: relative;
     padding: 6.5rem 0;
@@ -253,13 +261,18 @@ h6 {
     display: none;
   }
   .intro__heading {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
   }
   .intro__heading-line {
     height: 1px;
     background-color: #fff;
     width: 25%;
     margin-bottom: 4rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .intro__heading {
+    font-size: 4.5rem;
   }
 }
 
