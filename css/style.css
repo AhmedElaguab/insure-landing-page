@@ -47,6 +47,10 @@ h6 {
   margin: 0 auto;
 }
 
+.main-content {
+  overflow: hidden;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -57,7 +61,6 @@ h6 {
 }
 
 .header {
-  position: relative;
   background: #fff;
   padding: 1.3rem 1rem;
   z-index: 9999;
