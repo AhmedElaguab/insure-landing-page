@@ -59,7 +59,7 @@ h6 {
 .header {
   position: relative;
   background: #fff;
-  padding: 1.3rem 0;
+  padding: 1.3rem 1rem;
   z-index: 9999;
 }
 .header__inner {
@@ -189,7 +189,7 @@ h6 {
   }
 
   .header {
-    padding: 0.9rem;
+    padding: 0.9rem 0;
   }
 
   .navbar-sc-phone {
