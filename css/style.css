@@ -8,7 +8,7 @@
   letter-spacing: 1px;
 }
 
-.intro__heading {
+.about__heading, .intro__heading {
   font-size: 2.5rem;
   line-height: 1;
   margin-bottom: 2rem;
@@ -30,6 +30,7 @@ body {
   font: 16px/1.5 "Karla", sans-serif;
   padding: 0;
   margin: 0;
+  color: #2b272f;
 }
 
 h1,
@@ -183,6 +184,34 @@ h6 {
 .intro__btn:hover {
   background: #fff;
   color: #2d2640;
+}
+
+.about {
+  padding: 8.5rem 0;
+  text-align: center;
+}
+.about__heading {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+.about__heading-line {
+  height: 1px;
+  background: #2d2640;
+  width: 45%;
+  margin: 0 auto;
+  margin-bottom: 3rem;
+}
+.about__card {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.about__card-heading {
+  margin-top: 2rem;
+  font-size: 1.75rem;
+}
+.about__card-para {
+  margin-top: 1.5rem;
+  color: #837d87;
 }
 
 @media screen and (min-width: 425px) {
