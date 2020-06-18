@@ -287,6 +287,25 @@ h6 {
   }
 }
 
+@media screen and (min-width: $sc-md) {
+  // Start about styles
+  .about {
+    &__cards {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      max-width: 50%;
+
+      &:last-of-type {
+        margin: 0 auto;
+      }
+    }
+  }
+  // End about styles
+}
+
 @media screen and (min-width: $sc-lg) {
   // Global styles
   .container {
@@ -386,6 +405,29 @@ h6 {
     }
   }
   // End intro styles
+
+  // Start about styles
+  .about {
+    padding-top: 20rem;
+    text-align: left;
+
+    &__heading {
+      font-size: 4.5rem;
+
+      &-line {
+        margin-right: auto;
+        margin-left: 0;
+        width: 13%;
+      }
+    }
+
+    &__card {
+      max-width: 33%;
+      margin: 0;
+    }
+  }
+  // End about styles
+  // End about styles
 }
 
 @media screen and (min-width: $sc-xl) {

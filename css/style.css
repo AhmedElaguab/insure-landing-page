@@ -219,6 +219,18 @@ h6 {
     display: none;
   }
 }
+@media screen and (min-width: 768px) {
+  .about__cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about__card {
+    max-width: 50%;
+  }
+  .about__card:last-of-type {
+    margin: 0 auto;
+  }
+}
 @media screen and (min-width: 1024px) {
   .container {
     padding-left: 1rem;
@@ -300,6 +312,23 @@ h6 {
     background-color: #fff;
     width: 25%;
     margin-bottom: 4rem;
+  }
+
+  .about {
+    padding-top: 20rem;
+    text-align: left;
+  }
+  .about__heading {
+    font-size: 4.5rem;
+  }
+  .about__heading-line {
+    margin-right: auto;
+    margin-left: 0;
+    width: 13%;
+  }
+  .about__card {
+    max-width: 33%;
+    margin: 0;
   }
 }
 @media screen and (min-width: 1440px) {
