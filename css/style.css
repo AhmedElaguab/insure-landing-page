@@ -1,4 +1,4 @@
-.intro__btn, .navbar-sc-phone__link, .navbar__link {
+.more__link, .intro__btn, .navbar-sc-phone__link, .navbar__link {
   display: block;
   text-decoration: none;
   text-transform: uppercase;
@@ -8,7 +8,7 @@
   letter-spacing: 1px;
 }
 
-.about__heading, .intro__heading {
+.more__heading, .about__heading, .intro__heading {
   font-size: 2.5rem;
   line-height: 1;
   margin-bottom: 2rem;
@@ -187,7 +187,8 @@ h6 {
 }
 
 .about {
-  padding: 8.5rem 0;
+  padding-top: 8.5rem;
+  padding-bottom: 6rem;
   text-align: center;
 }
 .about__heading {
@@ -212,6 +213,38 @@ h6 {
 .about__card-para {
   margin-top: 1.5rem;
   color: #837d87;
+}
+
+.more__inner {
+  position: relative;
+  background-color: #2d2640;
+  margin: 1.5rem;
+  color: #fff;
+  padding: 4rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.more__inner::after {
+  content: "";
+  position: absolute;
+  background: url(./../images/bg-pattern-how-we-work-mobile.svg) top right no-repeat;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.more__heading {
+  text-align: center;
+  font-size: 2.3rem;
+  line-height: 1.1;
+}
+.more__link {
+  font-size: 0.9rem;
+  border: 1px solid #fff;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  margin-top: 1rem;
 }
 
 @media screen and (min-width: 425px) {
@@ -316,6 +349,7 @@ h6 {
 
   .about {
     padding-top: 20rem;
+    padding-bottom: 8rem;
     text-align: left;
   }
   .about__heading {
@@ -328,6 +362,24 @@ h6 {
   }
   .about__card {
     max-width: 33%;
+    margin: 0;
+  }
+
+  .more__inner {
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .more__inner::after {
+    background: url(./../images/bg-pattern-how-we-work-desktop.svg) top right no-repeat;
+  }
+  .more__heading {
+    text-align: left;
+    margin: 0;
+    font-size: 3.2rem;
+    width: 50%;
+  }
+  .more__link {
     margin: 0;
   }
 }

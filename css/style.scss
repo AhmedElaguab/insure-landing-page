@@ -243,7 +243,8 @@ h6 {
 
 // Start about styles
 .about {
-  padding: 8.5rem 0;
+  padding-top: 8.5rem;
+  padding-bottom: 6rem;
   text-align: center;
 
   &__heading {
@@ -276,6 +277,48 @@ h6 {
   }
 }
 // End about styles
+
+// Start more styles
+.more {
+  &__inner {
+    position: relative;
+    background-color: $primary;
+    margin: 1.5rem;
+    color: #fff;
+    padding: 4rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background: url(./../images/bg-pattern-how-we-work-mobile.svg) top right
+        no-repeat;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__heading {
+    @extend %section-heading;
+    text-align: center;
+    font-size: 2.3rem;
+    line-height: 1.1;
+  }
+
+  &__link {
+    @extend %link;
+    font-size: 0.9rem;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+  }
+}
+// End more styles
 
 // Responsive Styles
 @media screen and (min-width: $sc-sm) {
@@ -409,6 +452,7 @@ h6 {
   // Start about styles
   .about {
     padding-top: 20rem;
+    padding-bottom: 8rem;
     text-align: left;
 
     &__heading {
@@ -427,7 +471,32 @@ h6 {
     }
   }
   // End about styles
-  // End about styles
+
+  // Start more styles
+  .more {
+    &__inner {
+      margin: 0;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &::after {
+        background: url(./../images/bg-pattern-how-we-work-desktop.svg) top
+          right no-repeat;
+      }
+    }
+
+    &__heading {
+      text-align: left;
+      margin: 0;
+      font-size: 3.2rem;
+      width: 50%;
+    }
+
+    &__link {
+      margin: 0;
+    }
+  }
+  // End more styles
 }
 
 @media screen and (min-width: $sc-xl) {
