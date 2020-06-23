@@ -280,6 +280,7 @@ h6 {
 
 // Start more styles
 .more {
+  margin-bottom: 8rem;
   &__inner {
     position: relative;
     background-color: $primary;
@@ -319,6 +320,51 @@ h6 {
   }
 }
 // End more styles
+
+// Start footer styles
+.footer {
+  position: relative;
+  background: $secondary-light;
+  text-align: center;
+
+  &::before {
+    content: '';
+    position: absolute;
+    background: url(./../images/bg-pattern-footer-mobile.svg) top left no-repeat;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__inner {
+    padding: 5.5rem 2rem;
+  }
+
+  &__head {
+    &-brand {
+      margin-bottom: 2rem;
+    }
+
+    &-menu {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    &-img {
+      display: block;
+    }
+
+    &-link {
+      display: block;
+      margin: 0 0.5rem;
+    }
+  }
+}
+// End footer styles
 
 // Responsive Styles
 @media screen and (min-width: $sc-sm) {
