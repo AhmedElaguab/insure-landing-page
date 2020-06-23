@@ -14,11 +14,12 @@ $secondary-light: hsl(0, 0%, 98%);
 
 // Extend Placeholders
 %link {
+  font-family: 'Karla', sans-serif;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: inherit;
   letter-spacing: 1px;
 }
@@ -340,7 +341,7 @@ h6 {
   }
 
   &__inner {
-    padding: 5.5rem 2rem;
+    padding: 5.5rem 2rem 2rem;
   }
 
   &__head {
@@ -361,6 +362,31 @@ h6 {
     &-link {
       display: block;
       margin: 0 0.5rem;
+    }
+  }
+
+  &__body {
+    padding: 3rem 0;
+  }
+
+  &__list {
+    margin-bottom: 2rem;
+  }
+
+  &__heading {
+    @extend %link;
+    font-size: 0.9rem;
+    color: $primary-gray;
+    margin-bottom: 1.5rem;
+  }
+
+  &__link {
+    @extend %link;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }

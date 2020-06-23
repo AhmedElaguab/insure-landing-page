@@ -1,9 +1,10 @@
-.more__link, .intro__btn, .navbar-sc-phone__link, .navbar__link {
+.footer__link, .footer__heading, .more__link, .intro__btn, .navbar-sc-phone__link, .navbar__link {
+  font-family: "Karla", sans-serif;
   display: block;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: inherit;
   letter-spacing: 1px;
 }
@@ -267,7 +268,7 @@ h6 {
   height: 100%;
 }
 .footer__inner {
-  padding: 5.5rem 2rem;
+  padding: 5.5rem 2rem 2rem;
 }
 .footer__head-brand {
   margin-bottom: 2rem;
@@ -283,6 +284,24 @@ h6 {
 .footer__head-link {
   display: block;
   margin: 0 0.5rem;
+}
+.footer__body {
+  padding: 3rem 0;
+}
+.footer__list {
+  margin-bottom: 2rem;
+}
+.footer__heading {
+  font-size: 0.9rem;
+  color: #837d87;
+  margin-bottom: 1.5rem;
+}
+.footer__link {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.footer__link:hover {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 425px) {
