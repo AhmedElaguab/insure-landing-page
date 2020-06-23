@@ -419,6 +419,32 @@ h6 {
     }
   }
   // End about styles
+
+  // Start footer styles
+  .footer {
+    text-align: left;
+
+    &::before {
+      background: url(./../images/bg-pattern-footer-desktop.svg) top left
+        no-repeat;
+    }
+
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__body {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__list {
+      width: 25%;
+    }
+  }
+  // End footer styles
 }
 
 @media screen and (min-width: $sc-lg) {

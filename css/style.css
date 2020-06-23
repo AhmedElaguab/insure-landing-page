@@ -320,6 +320,25 @@ h6 {
   .about__card:last-of-type {
     margin: 0 auto;
   }
+
+  .footer {
+    text-align: left;
+  }
+  .footer::before {
+    background: url(./../images/bg-pattern-footer-desktop.svg) top left no-repeat;
+  }
+  .footer__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .footer__list {
+    width: 25%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .container {
